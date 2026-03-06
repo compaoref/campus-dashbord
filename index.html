@@ -1044,8 +1044,8 @@
       localStorage.setItem('firebaseApiKey', apiKey);
       localStorage.setItem('firebaseDatabaseUrl', dbUrl);
 
-      firebaseConfig.apiKey = apiKey;
-      firebaseConfig.databaseURL = dbUrl;
+      firebaseConfig.apiKey = AIzaSyDrWUlDO115ED7xQUysqW61CV-Lx1Hhm_c;
+      firebaseConfig.databaseURL = "https://campus-reussite-default-rtdb.europe-west1.firebasedatabase.app";
 
       initFirebase();
       showToast('✓ Firebase configuré!');
@@ -1066,7 +1066,7 @@
       const email = document.getElementById('adminEmail').value.trim();
       const password = document.getElementById('adminPassword').value;
 
-      if (email === 'admin@campus.fr' && password === '12345678') {
+      if (email === '' && password === '') {
         currentAdmin = email;
         document.getElementById('loginScreen').style.display = 'none';
         document.getElementById('dashboardWrapper').classList.add('active');
